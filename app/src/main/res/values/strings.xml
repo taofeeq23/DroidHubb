@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DroidHubb</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_upp">Sign Up</string>
+    <string name="or_login">or Login</string>
+    <string name="login">Login</string>
+    <string name="or_sign_up">or Sign Up</string>
+    <string name="your_files">Your files</string>
+    <string name="add_file">Add file</string>
+</resources>

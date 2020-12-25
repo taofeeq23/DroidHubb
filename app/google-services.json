@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "84750747602",
+    "project_id": "droidhubb-51b04",
+    "storage_bucket": "droidhubb-51b04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84750747602:android:4c54525c12e386c77d6a0b",
+        "android_client_info": {
+          "package_name": "com.droidcamp.kotlinclass.droidhubb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84750747602-bkvt4lbtdq3b835lupaluveb212kojvi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHAlbICdc5_Qlrdr1WlAlP86lZvPobe90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84750747602-bkvt4lbtdq3b835lupaluveb212kojvi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
