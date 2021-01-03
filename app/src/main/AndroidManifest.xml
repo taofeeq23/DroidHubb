@@ -8,9 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DroidHubb">
-        <activity android:name=".UploadActivity"></activity>
-        <activity android:name=".FilesActivity" />
+        android:theme="@style/splashScreenTheme">
+        <activity android:name=".FilesActivity"/>
+        <activity android:name=".UploadActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SignUpActivity">

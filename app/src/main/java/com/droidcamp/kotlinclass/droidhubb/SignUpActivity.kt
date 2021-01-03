@@ -21,6 +21,7 @@ class SignUpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_DroidHubb)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = Firebase.auth
@@ -41,7 +42,7 @@ class SignUpActivity : AppCompatActivity() {
         }
     }
 
-   private fun signUpUser() {
+    private fun signUpUser() {
         if (name.text.isEmpty()) {
             name.error = "Please enter your name"
             name.requestFocus()
@@ -63,22 +64,22 @@ class SignUpActivity : AppCompatActivity() {
         }
 
         auth.createUserWithEmailAndPassword(emailAddress.text.toString(), password.text.toString())
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        val user = Firebase.auth.currentUser
-                        user!!.sendEmailVerification()
-                                .addOnCompleteListener { task ->
-                                    if (task.isSuccessful) {
-                                        startActivity(Intent(this, LoginActivity::class.java))
-                                        finish()
-                                    }
-                                }
-                    } else {
-                        Toast.makeText(
-                                baseContext, "Sign Up failed. Try again after some time.",
-                                Toast.LENGTH_SHORT
-                        ).show()
-                    }
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    val user = Firebase.auth.currentUser
+                    user!!.sendEmailVerification()
+                        .addOnCompleteListener { task ->
+                            if (task.isSuccessful) {
+                                startActivity(Intent(this, LoginActivity::class.java))
+                                finish()
+                            }
+                        }
+                } else {
+                    Toast.makeText(
+                        baseContext, "Sign Up failed. Try again after some time.",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
+            }
     }
 }
